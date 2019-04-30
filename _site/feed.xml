@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>guruguru74's Website</title>
+    <description>gurugur74 Ideas &amp; Blogs</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 30 Apr 2019 23:56:00 +0900</pubDate>
+    <lastBuildDate>Tue, 30 Apr 2019 23:56:00 +0900</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>New Post</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#all-my-projects1&quot; id=&quot;markdown-toc-all-my-projects1&quot;&gt;All my projects1&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#미래산업2&quot; id=&quot;markdown-toc-미래산업2&quot;&gt;미래산업2&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#test&quot; id=&quot;markdown-toc-test&quot;&gt;Test&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;all-my-projects1&quot;&gt;All my projects1&lt;/h1&gt;
+&lt;p&gt;Following are projects started by me.&lt;/p&gt;
+
+&lt;h2 id=&quot;미래산업2&quot;&gt;미래산업2&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Career : 2004.06 ~ 2009.03&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;test&quot;&gt;Test&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;comments&lt;/code&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 30 Apr 2019 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/projects/</link>
+        <guid isPermaLink="true">http://localhost:4000/projects/</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

@@ -1,41 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>guruguru74's Website</title>
-    <description>gurugur74 Ideas &amp; Blogs</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 30 Apr 2019 23:56:00 +0900</pubDate>
-    <lastBuildDate>Tue, 30 Apr 2019 23:56:00 +0900</lastBuildDate>
-    <generator>Jekyll v3.8.5</generator>
+    <title>까먹지 말자!</title>
+    <description>까먹기 전에 기록하자~~~
+</description>
+    <link>http://yourdomain.com/</link>
+    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 04 Aug 2019 12:19:27 +0900</pubDate>
+    <lastBuildDate>Sun, 04 Aug 2019 12:19:27 +0900</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
     
       <item>
-        <title>New Post</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#all-my-projects1&quot; id=&quot;markdown-toc-all-my-projects1&quot;&gt;All my projects1&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#미래산업2&quot; id=&quot;markdown-toc-미래산업2&quot;&gt;미래산업2&lt;/a&gt;        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;#test&quot; id=&quot;markdown-toc-test&quot;&gt;Test&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;all-my-projects1&quot;&gt;All my projects1&lt;/h1&gt;
-&lt;p&gt;Following are projects started by me.&lt;/p&gt;
-
-&lt;h2 id=&quot;미래산업2&quot;&gt;미래산업2&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Career : 2004.06 ~ 2009.03&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;test&quot;&gt;Test&lt;/h3&gt;
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;comments&lt;/code&gt;&lt;/p&gt;
+        <title>MarkDown 문법연습</title>
+        <description>&lt;p&gt;markDown 문법연습&lt;/p&gt;
 </description>
-        <pubDate>Tue, 30 Apr 2019 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/projects/</link>
-        <guid isPermaLink="true">http://localhost:4000/projects/</guid>
+        <pubDate>Sun, 04 Aug 2019 12:18:09 +0900</pubDate>
+        <link>http://yourdomain.com/jekyll/update/2019/08/04/%E3%85%A1MarkDown-%EB%AC%B8%EB%B2%95%EC%97%B0%EC%8A%B5.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2019/08/04/%E3%85%A1MarkDown-%EB%AC%B8%EB%B2%95%EC%97%B0%EC%8A%B5.html</guid>
         
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Welcome to Jekyll!</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Tom&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &#39;Hi, Tom&#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 04 Aug 2019 11:53:09 +0900</pubDate>
+        <link>http://yourdomain.com/jekyll/update/2019/08/04/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2019/08/04/welcome-to-jekyll.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Post Test</title>
+        <description>&lt;p&gt;Post 연습&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 04 Aug 2019 11:53:09 +0900</pubDate>
+        <link>http://yourdomain.com/jekyll/update/2019/08/04/posttest.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2019/08/04/posttest.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
         
       </item>
     

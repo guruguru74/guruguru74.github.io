@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 05 Aug 2019 13:39:54 +0900</pubDate>
-    <lastBuildDate>Mon, 05 Aug 2019 13:39:54 +0900</lastBuildDate>
+    <pubDate>Mon, 05 Aug 2019 14:05:08 +0900</pubDate>
+    <lastBuildDate>Mon, 05 Aug 2019 14:05:08 +0900</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
@@ -28,16 +28,23 @@
     
       <item>
         <title>MarkDown 문법연습</title>
-        <description>&lt;p&gt;markDown 문법연습&lt;/p&gt;
+        <description>&lt;p&gt;MarkDown 문법연습&lt;/p&gt;
+
+&lt;p&gt;큰제목 : 문서 제목&lt;/p&gt;
+
+&lt;h1 id=&quot;this-is-an-h1&quot;&gt;This is an H1&lt;/h1&gt;
+
+&lt;p&gt;작은 제목 : 문서 부제목&lt;/p&gt;
+
+&lt;h2 id=&quot;this-is-an-h2&quot;&gt;This is an H2&lt;/h2&gt;
+
 </description>
         <pubDate>Sun, 04 Aug 2019 12:18:09 +0900</pubDate>
-        <link>http://localhost:4000/jekyll/update/2019/08/04/MarkDown-%EB%AC%B8%EB%B2%95%EC%97%B0%EC%8A%B5.html</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/update/2019/08/04/MarkDown-%EB%AC%B8%EB%B2%95%EC%97%B0%EC%8A%B5.html</guid>
+        <link>http://localhost:4000/tips/2019/08/04/MarkDown-%EB%AC%B8%EB%B2%95%EC%97%B0%EC%8A%B5.html</link>
+        <guid isPermaLink="true">http://localhost:4000/tips/2019/08/04/MarkDown-%EB%AC%B8%EB%B2%95%EC%97%B0%EC%8A%B5.html</guid>
         
         
-        <category>jekyll</category>
-        
-        <category>update</category>
+        <category>Tips</category>
         
       </item>
     

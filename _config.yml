@@ -3,13 +3,13 @@ email: guruguru74@gmail.com
 description: |
   까먹기 전에 기록하자~~~
 baseurl: ''
-url: 'http://yourdomain.com'
+url: 'http://guruguru74.github.io'
 facebook_username: guruguru74
 github_username: guruguru74
 markdown: kramdown
 
-plugins_dir:
-  - jekyll-gist
-  - jekyll-coffeescript
-  - jekyll-assets
-  - another-jekyll-plugin
+# plugins_dir:
+#   - jekyll-gist
+#   - jekyll-coffeescript
+#   - jekyll-assets
+#   - another-jekyll-plugin

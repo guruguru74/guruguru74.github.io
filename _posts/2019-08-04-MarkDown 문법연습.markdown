@@ -1,5 +1,6 @@
 ---
 layout: post
+auther: guruguru74
 title:  "MarkDown 문법연습"
 date:   2019-08-04 12:18:09 +0900
 categories: jekyll update

@@ -86,8 +86,9 @@
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>MarkDown 문법연습</p>
+    <h1 id="markdown-문법연습">MarkDown 문법연습</h1>
 
+<h2 id="1-제목">1. 제목</h2>
 <p>큰제목 : 문서 제목</p>
 
 <h1 id="this-is-an-h1">This is an H1</h1>
@@ -96,6 +97,301 @@
 
 <h2 id="this-is-an-h2">This is an H2</h2>
 
+<p>글머리 : 1~6까지만 지원</p>
+
+<h1 id="this-is-a-h1">This is a H1</h1>
+<h2 id="this-is-a-h2">This is a H2</h2>
+<h3 id="this-is-a-h3">This is a H3</h3>
+<h4 id="this-is-a-h4">This is a H4</h4>
+<h5 id="this-is-a-h5">This is a H5</h5>
+<h6 id="this-is-a-h6">This is a H6</h6>
+<p>####### This is a H7 (N/A)</p>
+
+<p>BlockQuate</p>
+
+<p>이메일에서 사용하는 &gt; 블럭인용문자를 이용한다.</p>
+
+<blockquote>
+  <p>This is a first blockquate1.</p>
+  <blockquote>
+    <p>This is a first blockquate2.</p>
+  </blockquote>
+</blockquote>
+
+<h2 id="12-목록">1.2 목록</h2>
+
+<h3 id="순서있는-목록번호">순서있는 목록(번호)</h3>
+<p>순서있는 목록은 숫자와 점을 사용한다.</p>
+
+<ol>
+  <li>첫번째</li>
+  <li>두번째</li>
+  <li>세번째</li>
+</ol>
+
+<h3 id="현재까지는-어떤-번호를-입력해도-순서는-내림차순으로-정의된다">현재까지는 어떤 번호를 입력해도 순서는 내림차순으로 정의된다.</h3>
+
+<ol>
+  <li>첫번째</li>
+  <li>세번째</li>
+  <li>두번째</li>
+</ol>
+
+<h3 id="순서없는-목록글머리-기호">순서없는 목록(글머리 기호)</h3>
+<pre><code>
+* 빨강
+    * 녹색
+        * 파랑
+</code></pre>
+<ul>
+  <li>빨강
+    <ul>
+      <li>녹색
+        <ul>
+          <li>파랑</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<pre><code>
++ 빨강
+    + 녹색
+        * 파랑
+</code></pre>
+<ul>
+  <li>빨강
+    <ul>
+      <li>녹색
+        <ul>
+          <li>파랑</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<pre><code>
+- 빨강
+    - 녹색
+        - 파랑
+</code></pre>
+<ul>
+  <li>빨강
+    <ul>
+      <li>녹색
+        <ul>
+          <li>파랑</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>혼합해서 사용하는 것도 가능하다.</p>
+<pre><code>
+* 1단계
+    - 2단계
+        + 3단계
+            = 4단계
+</code></pre>
+<ul>
+  <li>1단계
+    <ul>
+      <li>2단계
+        <ul>
+          <li>3단계
+  = 4단계</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="13-코드-prepre">1.3 코드 &lt;pre&gt;<code></code>&lt;/pre&gt;</h2>
+
+<p>4개의 공백 또는 하나의 탭으로 들여쓰기를 만나면 변환되기 시작하여 들여쓰지 않는 행을 만날때까지 변환이 계속된다.</p>
+
+<blockquote>
+  <p>한줄 띄어쓰면 인식이 제대로 안되는 문제가 발생하곤 합니다.</p>
+</blockquote>
+
+<pre><code>
+This is a normal paragraph:
+    This is a code block.
+end code block.
+```java
+public static void main(String[] args) {
+    System.out.println("Hello World");
+```
+}
+</code></pre>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Hello World"</span><span class="o">);</span>
+</code></pre></div></div>
+
+<h2 id="14-수평선-hr">1.4 수평선 &lt;hr/&gt;</h2>
+
+<p>아래 줄은 모두 수평선을 만든다. 마크다운 문서를 미리보기로 출력할 때 페이지 나누기 용도로 많이 사용한다.</p>
+<pre>
+* * *
+***
+*****
+---
+</pre>
+<hr />
+<hr />
+<hr />
+<hr />
+
+<h2 id="15-링크">1.5 링크</h2>
+<ul>
+  <li>참조링크</li>
+</ul>
+
+<pre>
+[link keyword][id]
+[id]: URL "Optional Title here"
+</pre>
+<p>[link keyword][id]
+[id]: URL “Optional Title here”</p>
+
+<pre>
+Link: [Google][googlelink]
+[googlelink]: https://google.com "Go google"
+</pre>
+<p>Link: [Google][googlelink]
+[googlelink]: https://google.com “Go google”</p>
+
+<ul>
+  <li>인라인 링크</li>
+</ul>
+
+<p>syntax: <a href="link">Title</a></p>
+
+<ul>
+  <li>자동 연결</li>
+</ul>
+
+<pre><code>
+&lt;http://example.com/&gt;
+&lt;address@example.com&gt;
+</code></pre>
+
+<p><a href="http://example.com">http://example.com</a>
+<a href="mailto:address@example.com">address@example.com</a></p>
+
+<h2 id="16-강조">1.6 강조</h2>
+
+<pre>
+*single asterisks*
+_single underscores_
+**double asterisks**
+__double underscores__
+++underline++ =&gt; <u>underline</u>
+~~cancelline~~
+</pre>
+
+<p><em>single asterisks</em>
+<em>single underscores</em>
+<strong>double asterisks</strong>
+<strong>double underscores</strong>
+++underline++ =&gt; <u>underline</u>
+<del>cancelline</del>
+underline</p>
+
+<h2 id="17-이미지">1.7 이미지</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![Kayak](http://www.gstatic.com/webp/gallery/2.jpg "To go kayaking.")
+</code></pre></div></div>
+<p><img src="http://www.gstatic.com/webp/gallery/2.jpg" alt="Kayak" title="To go kayaking." /></p>
+
+<p><img src="http://www.gstatic.com/webp/gallery/5.jpg" alt="logo" title="불쑈" /></p>
+
+<ul>
+  <li>이미지 링크</li>
+</ul>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[![Vue](/images/logo.png)](https://kr.vuejs.org/) =&gt; 안됨.
+[![Vue](https://kr.vuejs.org/images/logo.png)](https://kr.vuejs.org/) =&gt; 됨
+</code></pre></div></div>
+
+<p><a href="https://kr.vuejs.org/"><img src="https://kr.vuejs.org/images/logo.png" alt="Vue" /></a></p>
+
+<h2 id="18-테이블">1.8 테이블</h2>
+
+<p><code class="highlighter-rouge">&lt;table&gt;</code> 태그로 변환됩니다.
+헤더 셀을 구분할 때 3개 이상의 -(hyphen/dash) 기호가 필요합니다.
+헤더 셀을 구분하면서 :(Colons) 기호로 셀(열/칸) 안에 내용을 정렬할 수 있습니다.
+가장 좌측과 가장 우측에 있는 |(vertical bar) 기호는 생략 가능합니다.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>값 | 의미 | 기본값
+---|:---:|---:
+`static` | 유형(기준) 없음 / 배치 불가능 | `static`
+`relative` | 요소 **자신**을 기준으로 배치 |
+`absolute` | 위치 상 **_부모_(조상)요소**를 기준으로 배치 |
+`fixed` | **브라우저 창**을 기준으로 배치 |
+</code></pre></div></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>값</th>
+      <th style="text-align: center">의미</th>
+      <th style="text-align: right">기본값</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">static</code></td>
+      <td style="text-align: center">유형(기준) 없음 / 배치 불가능</td>
+      <td style="text-align: right"><code class="highlighter-rouge">static</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">relative</code></td>
+      <td style="text-align: center">요소 <strong>자신</strong>을 기준으로 배치</td>
+      <td style="text-align: right"> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">absolute</code></td>
+      <td style="text-align: center">위치 상 <strong><em>부모</em>(조상)요소</strong>를 기준으로 배치</td>
+      <td style="text-align: right"> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">fixed</code></td>
+      <td style="text-align: center"><strong>브라우저 창</strong>을 기준으로 배치</td>
+      <td style="text-align: right"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="19-줄바꿈">1.9 줄바꿈</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>동해물과 백두산이 마르고 닳도록  &lt;!-- 띄어쓰기 2번 --&gt;
+하느님이 보우하사 우리나라 만세  &lt;!-- &lt;br&gt;도 가능함. --&gt;
+무궁화 삼천리 화려 강산  
+대한 사람 대한으로 길이 보전하세 
+</code></pre></div></div>
+<p>동해물과 백두산이 마르고 닳도록<br />
+하느님이 보우하사 우리나라 만세<br />
+무궁화 삼천리 화려 강산<br />
+대한 사람 대한으로 길이 보전하세</p>
+
+<hr />
+<ul>
+  <li>
+    <p>참고 링크</p>
+
+    <ul>
+      <li>
+        <p><a href="https://heropy.blog/2017/09/30/markdown/" title="HEROPY Tech">MarkDown 사용법 총정리</a></p>
+      </li>
+      <li>
+        <p><a href="https://gist.github.com/ihoneymon/652be052a0727ad59601#21-%ED%97%A4%EB%8D%94headers" title="ihoneymon">마크다운 markdown 작성법</a>
+***</p>
+      </li>
+    </ul>
+  </li>
+</ul>
 
   </div>
 

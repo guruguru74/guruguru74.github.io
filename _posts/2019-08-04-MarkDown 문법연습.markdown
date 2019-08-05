@@ -5,8 +5,9 @@ title:  "MarkDown 문법연습"
 date:   2019-08-04 12:18:09 +0900
 categories: Tips
 ---
-MarkDown 문법연습
+# MarkDown 문법연습
 
+## 1. 제목
 큰제목 : 문서 제목
 
 This is an H1
@@ -17,5 +18,226 @@ This is an H1
 This is an H2
 -------------
 
+글머리 : 1~6까지만 지원
+
+# This is a H1
+## This is a H2
+### This is a H3
+#### This is a H4
+##### This is a H5
+###### This is a H6
+####### This is a H7 (N/A)
+
+BlockQuate
+
+이메일에서 사용하는 > 블럭인용문자를 이용한다.
+
+> This is a first blockquate1.
+>> This is a first blockquate2.
+  
+## 1.2 목록
+
+### 순서있는 목록(번호)
+순서있는 목록은 숫자와 점을 사용한다.
+
+1. 첫번째
+2. 두번째
+3. 세번째
+
+### 현재까지는 어떤 번호를 입력해도 순서는 내림차순으로 정의된다.
+
+1. 첫번째
+3. 세번째
+2. 두번째
+
+### 순서없는 목록(글머리 기호)
+<pre><code>
+* 빨강
+    * 녹색
+        * 파랑
+</code></pre>
+* 빨강
+    * 녹색
+        * 파랑
+<pre><code>
++ 빨강
+    + 녹색
+        * 파랑
+</code></pre>
++ 빨강
+    + 녹색
+        * 파랑
+<pre><code>
+- 빨강
+    - 녹색
+        - 파랑
+</code></pre>
+- 빨강
+    - 녹색
+        - 파랑
+
+혼합해서 사용하는 것도 가능하다.
+<pre><code>
+* 1단계
+    - 2단계
+        + 3단계
+            = 4단계
+</code></pre>
+* 1단계
+    - 2단계
+        + 3단계
+            = 4단계
 
 
+## 1.3 코드 <pre><code></code></pre>
+
+4개의 공백 또는 하나의 탭으로 들여쓰기를 만나면 변환되기 시작하여 들여쓰지 않는 행을 만날때까지 변환이 계속된다.
+
+> 한줄 띄어쓰면 인식이 제대로 안되는 문제가 발생하곤 합니다.
+
+<pre><code>
+This is a normal paragraph:
+    This is a code block.
+end code block.
+```java
+public static void main(String[] args) {
+    System.out.println("Hello World");
+```
+}
+</code></pre>
+
+```java
+public static void main(String[] args) {
+    System.out.println("Hello World");
+```
+
+## 1.4 수평선 <hr/>
+
+아래 줄은 모두 수평선을 만든다. 마크다운 문서를 미리보기로 출력할 때 페이지 나누기 용도로 많이 사용한다.
+<pre>
+* * *
+***
+*****
+---
+</pre>
+* * *
+***
+*****
+---
+
+## 1.5 링크
+* 참조링크
+
+<pre>
+[link keyword][id]
+[id]: URL "Optional Title here"
+</pre>
+[link keyword][id]
+[id]: URL "Optional Title here"
+
+<pre>
+Link: [Google][googlelink]
+[googlelink]: https://google.com "Go google"
+</pre>
+Link: [Google][googlelink]
+[googlelink]: https://google.com "Go google"
+
+
+* 인라인 링크
+
+syntax: [Title](link)
+
+* 자동 연결
+
+<pre><code>
+<http://example.com/>
+<address@example.com>
+</code></pre>
+
+<http://example.com> 
+<address@example.com>
+
+## 1.6 강조
+
+<pre>
+*single asterisks*
+_single underscores_
+**double asterisks**
+__double underscores__
+++underline++ => <u>underline</u>
+~~cancelline~~
+</pre>
+
+*single asterisks*
+_single underscores_
+**double asterisks**
+__double underscores__
+++underline++ => <u>underline</u>
+~~cancelline~~
+underline
+
+## 1.7 이미지
+
+```
+![Kayak](http://www.gstatic.com/webp/gallery/2.jpg "To go kayaking.")
+```
+![Kayak](http://www.gstatic.com/webp/gallery/2.jpg "To go kayaking.")
+
+![logo](http://www.gstatic.com/webp/gallery/5.jpg "불쑈")
+
+* 이미지 링크
+
+```html
+[![Vue](/images/logo.png)](https://kr.vuejs.org/) => 안됨.
+[![Vue](https://kr.vuejs.org/images/logo.png)](https://kr.vuejs.org/) => 됨
+```
+
+[![Vue](https://kr.vuejs.org/images/logo.png)](https://kr.vuejs.org/)
+
+## 1.8 테이블
+
+`<table>` 태그로 변환됩니다.
+헤더 셀을 구분할 때 3개 이상의 -(hyphen/dash) 기호가 필요합니다.
+헤더 셀을 구분하면서 :(Colons) 기호로 셀(열/칸) 안에 내용을 정렬할 수 있습니다.
+가장 좌측과 가장 우측에 있는 |(vertical bar) 기호는 생략 가능합니다.
+
+```html
+값 | 의미 | 기본값
+---|:---:|---:
+`static` | 유형(기준) 없음 / 배치 불가능 | `static`
+`relative` | 요소 **자신**을 기준으로 배치 |
+`absolute` | 위치 상 **_부모_(조상)요소**를 기준으로 배치 |
+`fixed` | **브라우저 창**을 기준으로 배치 |
+```
+
+값 | 의미 | 기본값
+---|:---:|---:
+`static` | 유형(기준) 없음 / 배치 불가능 | `static`
+`relative` | 요소 **자신**을 기준으로 배치 |
+`absolute` | 위치 상 **_부모_(조상)요소**를 기준으로 배치 |
+`fixed` | **브라우저 창**을 기준으로 배치 |
+  
+## 1.9 줄바꿈
+```
+동해물과 백두산이 마르고 닳도록  <!-- 띄어쓰기 2번 -->
+하느님이 보우하사 우리나라 만세  <!-- <br>도 가능함. -->
+무궁화 삼천리 화려 강산  
+대한 사람 대한으로 길이 보전하세 
+```
+동해물과 백두산이 마르고 닳도록  
+하느님이 보우하사 우리나라 만세  
+무궁화 삼천리 화려 강산<br>
+대한 사람 대한으로 길이 보전하세  
+
+
+
+
+
+
+***
+* 참고 링크
+
+    * [MarkDown 사용법 총정리](https://heropy.blog/2017/09/30/markdown/  "HEROPY Tech")
+
+    * [마크다운 markdown 작성법](https://gist.github.com/ihoneymon/652be052a0727ad59601#21-%ED%97%A4%EB%8D%94headers "ihoneymon")
+***

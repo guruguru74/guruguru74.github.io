@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 05 Aug 2019 14:26:59 +0900</pubDate>
-    <lastBuildDate>Mon, 05 Aug 2019 14:26:59 +0900</lastBuildDate>
+    <pubDate>Mon, 05 Aug 2019 16:32:06 +0900</pubDate>
+    <lastBuildDate>Mon, 05 Aug 2019 16:32:06 +0900</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
@@ -28,8 +28,9 @@
     
       <item>
         <title>MarkDown 문법연습</title>
-        <description>&lt;p&gt;MarkDown 문법연습&lt;/p&gt;
+        <description>&lt;h1 id=&quot;markdown-문법연습&quot;&gt;MarkDown 문법연습&lt;/h1&gt;
 
+&lt;h2 id=&quot;1-제목&quot;&gt;1. 제목&lt;/h2&gt;
 &lt;p&gt;큰제목 : 문서 제목&lt;/p&gt;
 
 &lt;h1 id=&quot;this-is-an-h1&quot;&gt;This is an H1&lt;/h1&gt;
@@ -38,6 +39,301 @@
 
 &lt;h2 id=&quot;this-is-an-h2&quot;&gt;This is an H2&lt;/h2&gt;
 
+&lt;p&gt;글머리 : 1~6까지만 지원&lt;/p&gt;
+
+&lt;h1 id=&quot;this-is-a-h1&quot;&gt;This is a H1&lt;/h1&gt;
+&lt;h2 id=&quot;this-is-a-h2&quot;&gt;This is a H2&lt;/h2&gt;
+&lt;h3 id=&quot;this-is-a-h3&quot;&gt;This is a H3&lt;/h3&gt;
+&lt;h4 id=&quot;this-is-a-h4&quot;&gt;This is a H4&lt;/h4&gt;
+&lt;h5 id=&quot;this-is-a-h5&quot;&gt;This is a H5&lt;/h5&gt;
+&lt;h6 id=&quot;this-is-a-h6&quot;&gt;This is a H6&lt;/h6&gt;
+&lt;p&gt;####### This is a H7 (N/A)&lt;/p&gt;
+
+&lt;p&gt;BlockQuate&lt;/p&gt;
+
+&lt;p&gt;이메일에서 사용하는 &amp;gt; 블럭인용문자를 이용한다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This is a first blockquate1.&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;This is a first blockquate2.&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;12-목록&quot;&gt;1.2 목록&lt;/h2&gt;
+
+&lt;h3 id=&quot;순서있는-목록번호&quot;&gt;순서있는 목록(번호)&lt;/h3&gt;
+&lt;p&gt;순서있는 목록은 숫자와 점을 사용한다.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;첫번째&lt;/li&gt;
+  &lt;li&gt;두번째&lt;/li&gt;
+  &lt;li&gt;세번째&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;현재까지는-어떤-번호를-입력해도-순서는-내림차순으로-정의된다&quot;&gt;현재까지는 어떤 번호를 입력해도 순서는 내림차순으로 정의된다.&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;첫번째&lt;/li&gt;
+  &lt;li&gt;세번째&lt;/li&gt;
+  &lt;li&gt;두번째&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;순서없는-목록글머리-기호&quot;&gt;순서없는 목록(글머리 기호)&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;
+* 빨강
+    * 녹색
+        * 파랑
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+  &lt;li&gt;빨강
+    &lt;ul&gt;
+      &lt;li&gt;녹색
+        &lt;ul&gt;
+          &lt;li&gt;파랑&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;
++ 빨강
+    + 녹색
+        * 파랑
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+  &lt;li&gt;빨강
+    &lt;ul&gt;
+      &lt;li&gt;녹색
+        &lt;ul&gt;
+          &lt;li&gt;파랑&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;
+- 빨강
+    - 녹색
+        - 파랑
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+  &lt;li&gt;빨강
+    &lt;ul&gt;
+      &lt;li&gt;녹색
+        &lt;ul&gt;
+          &lt;li&gt;파랑&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;혼합해서 사용하는 것도 가능하다.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+* 1단계
+    - 2단계
+        + 3단계
+            = 4단계
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+  &lt;li&gt;1단계
+    &lt;ul&gt;
+      &lt;li&gt;2단계
+        &lt;ul&gt;
+          &lt;li&gt;3단계
+  = 4단계&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;13-코드-prepre&quot;&gt;1.3 코드 &amp;lt;pre&amp;gt;&lt;code&gt;&lt;/code&gt;&amp;lt;/pre&amp;gt;&lt;/h2&gt;
+
+&lt;p&gt;4개의 공백 또는 하나의 탭으로 들여쓰기를 만나면 변환되기 시작하여 들여쓰지 않는 행을 만날때까지 변환이 계속된다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;한줄 띄어쓰면 인식이 제대로 안되는 문제가 발생하곤 합니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;
+This is a normal paragraph:
+    This is a code block.
+end code block.
+```java
+public static void main(String[] args) {
+    System.out.println(&quot;Hello World&quot;);
+```
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;14-수평선-hr&quot;&gt;1.4 수평선 &amp;lt;hr/&amp;gt;&lt;/h2&gt;
+
+&lt;p&gt;아래 줄은 모두 수평선을 만든다. 마크다운 문서를 미리보기로 출력할 때 페이지 나누기 용도로 많이 사용한다.&lt;/p&gt;
+&lt;pre&gt;
+* * *
+***
+*****
+---
+&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;hr /&gt;
+&lt;hr /&gt;
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;15-링크&quot;&gt;1.5 링크&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;참조링크&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;
+[link keyword][id]
+[id]: URL &quot;Optional Title here&quot;
+&lt;/pre&gt;
+&lt;p&gt;[link keyword][id]
+[id]: URL “Optional Title here”&lt;/p&gt;
+
+&lt;pre&gt;
+Link: [Google][googlelink]
+[googlelink]: https://google.com &quot;Go google&quot;
+&lt;/pre&gt;
+&lt;p&gt;Link: [Google][googlelink]
+[googlelink]: https://google.com “Go google”&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;인라인 링크&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;syntax: &lt;a href=&quot;link&quot;&gt;Title&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;자동 연결&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&amp;lt;http://example.com/&amp;gt;
+&amp;lt;address@example.com&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://example.com&quot;&gt;http://example.com&lt;/a&gt;
+&lt;a href=&quot;mailto:address@example.com&quot;&gt;address@example.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;16-강조&quot;&gt;1.6 강조&lt;/h2&gt;
+
+&lt;pre&gt;
+*single asterisks*
+_single underscores_
+**double asterisks**
+__double underscores__
+++underline++ =&amp;gt; &lt;u&gt;underline&lt;/u&gt;
+~~cancelline~~
+&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;single asterisks&lt;/em&gt;
+&lt;em&gt;single underscores&lt;/em&gt;
+&lt;strong&gt;double asterisks&lt;/strong&gt;
+&lt;strong&gt;double underscores&lt;/strong&gt;
+++underline++ =&amp;gt; &lt;u&gt;underline&lt;/u&gt;
+&lt;del&gt;cancelline&lt;/del&gt;
+underline&lt;/p&gt;
+
+&lt;h2 id=&quot;17-이미지&quot;&gt;1.7 이미지&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![Kayak](http://www.gstatic.com/webp/gallery/2.jpg &quot;To go kayaking.&quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.gstatic.com/webp/gallery/2.jpg&quot; alt=&quot;Kayak&quot; title=&quot;To go kayaking.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.gstatic.com/webp/gallery/5.jpg&quot; alt=&quot;logo&quot; title=&quot;불쑈&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;이미지 링크&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[![Vue](/images/logo.png)](https://kr.vuejs.org/) =&amp;gt; 안됨.
+[![Vue](https://kr.vuejs.org/images/logo.png)](https://kr.vuejs.org/) =&amp;gt; 됨
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://kr.vuejs.org/&quot;&gt;&lt;img src=&quot;https://kr.vuejs.org/images/logo.png&quot; alt=&quot;Vue&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;18-테이블&quot;&gt;1.8 테이블&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;table&amp;gt;&lt;/code&gt; 태그로 변환됩니다.
+헤더 셀을 구분할 때 3개 이상의 -(hyphen/dash) 기호가 필요합니다.
+헤더 셀을 구분하면서 :(Colons) 기호로 셀(열/칸) 안에 내용을 정렬할 수 있습니다.
+가장 좌측과 가장 우측에 있는 |(vertical bar) 기호는 생략 가능합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;값 | 의미 | 기본값
+---|:---:|---:
+`static` | 유형(기준) 없음 / 배치 불가능 | `static`
+`relative` | 요소 **자신**을 기준으로 배치 |
+`absolute` | 위치 상 **_부모_(조상)요소**를 기준으로 배치 |
+`fixed` | **브라우저 창**을 기준으로 배치 |
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;값&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;의미&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;기본값&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;static&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;유형(기준) 없음 / 배치 불가능&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;static&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;relative&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;요소 &lt;strong&gt;자신&lt;/strong&gt;을 기준으로 배치&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;absolute&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;위치 상 &lt;strong&gt;&lt;em&gt;부모&lt;/em&gt;(조상)요소&lt;/strong&gt;를 기준으로 배치&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fixed&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;브라우저 창&lt;/strong&gt;을 기준으로 배치&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;19-줄바꿈&quot;&gt;1.9 줄바꿈&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;동해물과 백두산이 마르고 닳도록  &amp;lt;!-- 띄어쓰기 2번 --&amp;gt;
+하느님이 보우하사 우리나라 만세  &amp;lt;!-- &amp;lt;br&amp;gt;도 가능함. --&amp;gt;
+무궁화 삼천리 화려 강산  
+대한 사람 대한으로 길이 보전하세 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;동해물과 백두산이 마르고 닳도록&lt;br /&gt;
+하느님이 보우하사 우리나라 만세&lt;br /&gt;
+무궁화 삼천리 화려 강산&lt;br /&gt;
+대한 사람 대한으로 길이 보전하세&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;참고 링크&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;a href=&quot;https://heropy.blog/2017/09/30/markdown/&quot; title=&quot;HEROPY Tech&quot;&gt;MarkDown 사용법 총정리&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;a href=&quot;https://gist.github.com/ihoneymon/652be052a0727ad59601#21-%ED%97%A4%EB%8D%94headers&quot; title=&quot;ihoneymon&quot;&gt;마크다운 markdown 작성법&lt;/a&gt;
+***&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 </description>
         <pubDate>Sun, 04 Aug 2019 12:18:09 +0900</pubDate>
         <link>http://localhost:4000/tips/2019/08/04/MarkDown-%EB%AC%B8%EB%B2%95%EC%97%B0%EC%8A%B5.html</link>

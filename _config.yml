@@ -8,6 +8,10 @@ facebook_username: guruguru74
 github_username: guruguru74
 markdown: kramdown
 
+# Disqus settings
+disqus:
+  shortname: guruguru74
+
 # plugins_dir:
 #   - jekyll-gist
 #   - jekyll-coffeescript
